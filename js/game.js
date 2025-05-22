@@ -19,9 +19,9 @@ class Game {
     this.counter = 0;
 
     //adding audio
-    this.boom = new Audio("../assets/boom.wav");
+    this.boom = new Audio("assets/boom.wav");
     this.boom.volume = 0.1;
-    this.horn = new Audio("../assets/horn.wav");
+    this.horn = new Audio("assets/horn.wav");
     this.horn.volume = 0.1;
   }
   start() {
