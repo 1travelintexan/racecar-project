@@ -8,7 +8,7 @@ class Player {
     this.directionX = 0;
     this.directionY = 0;
     this.element = document.createElement("img");
-    this.element.src = "images/car.png";
+    this.element.src = "/imagesimages/car.png";
     this.element.style.width = `${this.width}px`;
     this.element.style.height = `${this.height}px`;
     this.element.style.top = `${this.top}px`;
