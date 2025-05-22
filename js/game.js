@@ -156,6 +156,9 @@ class Game {
     const highScoresFromLS = localStorage.getItem("high-scores");
     if (!highScoresFromLS) {
       localStorage.setItem("high-scores", JSON.stringify([this.score]));
+      const liElement = document.createElement("li");
+      liElement.innerText = this.score;
+      this.highScoresElement.appendChild(liElement);
     } else {
       const parsedHighScores = JSON.parse(highScoresFromLS);
       parsedHighScores.push(this.score);
