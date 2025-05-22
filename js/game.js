@@ -175,7 +175,7 @@ class Game {
     this.livesElement.innerHTML = "";
     for (let i = 0; i < this.lives; i++) {
       const imgElement = document.createElement("img");
-      imgElement.src = "../images/heart.jpg";
+      imgElement.src = "./images/heart.jpg";
       imgElement.classList.add("heart");
       this.livesElement.appendChild(imgElement);
     }
