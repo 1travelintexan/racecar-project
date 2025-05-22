@@ -1,0 +1,96 @@
+body {
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+#game-intro {
+  padding: 20px 0px;
+}
+
+#game-container {
+  display: none;
+  width: 100vw;
+  padding: 20px 0px;
+  justify-content: space-around;
+}
+
+#game-screen {
+  display: none;
+  align-content: center;
+  padding: 20px 0px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(../images/road.png);
+  background-size: cover;
+  animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 -1000px;
+  }
+  95% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 50px;
+  }
+}
+
+#game-end {
+  display: none;
+}
+
+.game-intro p {
+  font-size: 18px;
+  font-family: "Verdana";
+}
+
+.logo-img {
+  width: 350px;
+}
+
+.arrows-img {
+  width: 150px;
+}
+
+body button {
+  font-size: 30px;
+  background-color: #870007;
+  color: #fff;
+  padding: 20px 40px;
+  border: 0;
+  box-shadow: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.heart {
+  height: 30px;
+}
+/* .spin {
+  -webkit-animation: rotation 0.5s linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+} */
+.spin3d {
+  animation: spin-3d 1s;
+  transform-style: preserve-3d;
+}
+
+@keyframes spin-3d {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
